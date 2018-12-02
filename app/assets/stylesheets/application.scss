@@ -14,3 +14,274 @@
 
 @import "bootstrap";
 @import "static_pages";
+
+/**** Bad CSS! ******/
+// Add SSDP brand colors to map
+// Adding to map has to be done BEFORE importing bootstrap
+$theme-colors: (
+  "john-walsh-ssdp": #136F8D,
+  "teal-ssdp": #17BEBB,
+  "chartreuse-ssdp": #DAF702,
+  "orange-ssdp": #FAA732,
+  "navy-ssdp": #003249,
+  "gray-ssdp": #636467
+);
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+
+@import "bootstrap";
+
+// Import Montserrat font
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// Import Open Sans Font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Set HTML to Open Sans default
+html {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+  height: 100vh;
+}
+
+// Set all headings to Montserrat
+h1, h2, h3, h4, h5, h6, .nav-link, .dropdown-toggle {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+// Set heading colors
+
+h1 {
+  color: #136F8D;
+}
+
+h2 {
+  color: #636467;
+}
+
+h3 {
+  color: #FAA732;
+}
+
+h4 {
+  color: #136F8D;
+}
+
+h5 {
+  color: #003249;
+}
+
+/** Custom list styles **/
+li {
+    list-style-image: url('img/angle-double-right-solid.svg');
+}
+
+/** Custom Nav Styles **/
+.ssdp-full-header {
+  background: #fbfbfb;
+  border: 1px solid #eee;
+  height: 36px;
+  padding: 6px 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .ssdp-full-header {
+    display: none;
+  }
+}
+
+.ssdp-header-contacts {
+  font-size: 13px;
+  line-height: 24px;
+  float: left;
+}
+
+.ssdp-header-contact-item{
+  color: #136F8D;
+  float: right;
+  margin-right: 22px;
+}
+
+.ssdp-header-soc-icon {
+  color: #136F8D;
+  line-height: 18px;
+  font-size: 17px;
+  padding: 0px 6px 0;
+  margin: 5px 0 0;
+  display: inline-block;
+  float: right;
+  opacity:0.9;
+}
+
+nav {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-brand > img {
+  max-width: 100px;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+    color: #17BEBB!important;
+}
+//or
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+    color: #17BEBB!important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+    color: #17BEBB!important;
+}
+//or
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+    color: #17BEBB!important;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:active {
+    color: #17BEBB!important;
+}
+//or
+.dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:active {
+    color: #17BEBB!important;
+}
+
+.dropdown-item, .nav-link, .dropdown-toggle {
+  color: #636467 !important;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+/** Link animations **/
+
+.nav-link, .nav-link:visited {
+  text-decoration: none;
+  position: relative;
+}
+.nav-link:after, .nav-link:visited:after {
+  content: '';
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #17BEBB;
+  transition: 0.2s;
+}
+.nav-link:hover:after, .nav-link:visited:hover:after {
+  width: 100%;
+}
+.nav-link.block, .nav-link:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+.nav-link.block:hover, .nav-link:visited.block:hover {
+  background: #636467;
+}
+
+.dropdown-toggle::after {
+  background: none!important;
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+  @media all and (max-width: 991px) {
+    .dropdown-toggle {
+      padding: 0px;
+    }
+  }
+
+/** Custom Button Styles **/
+
+.ssdp-round-button {
+  color: #fff;
+  border: 2px solid #f8f8f8;
+  background: transparent;
+  border-radius: 32px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight:700;
+  letter-spacing: 1.03px;
+  line-height: 13px;
+  padding: 12px 30px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  text-transform: uppercase;
+
+}
+.ssdp-round-button:hover {
+  background-color: #f8f8f8;
+  color: #333;
+}
+/** Icons on Home Page **/
+.ssdp-front-page-icon {
+  color: #fff;
+  float: left;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+/** Custom Headers **/
+.ssdp-front-page-header {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+/** Carousel Styles **/
+
+.carousel-item > p {
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 28px;
+  text-align: center;
+}
+
+.carousel-item > h3 {
+  color: #fff;
+  text-align: center;
+}
+
+/** Footer Styles **/
+.ssdp-footer-soc-icon {
+color: #636467;
+line-height: 18px;
+font-size: 17px;
+padding: 0px 6px 0;
+margin: 5px 0 0;
+display: inline-block;
+float: right;
+opacity:0.9;
+}
+
+/** Staff page **/
+
+.staff-name, .board-name {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.staff-title, .board-title {
+  color: #636467;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.staff-social, .board-social {
+  text-align:center
+}
