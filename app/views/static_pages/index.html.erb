@@ -63,7 +63,8 @@
 </style>
 <div class="grid">
   <div class="hero-img">
-    <img class="img-responsive" src="/img/home-page-hero.jpg" alt=" " style="width:100%" />
+    <%= image_tag("home-page-hero.jpg", class: "img-responsive", style: "width: 100%") %>
+
   </div>
   <div class="full-text bg-john-walsh-ssdp p-3">
     <div class="container">
@@ -131,7 +132,8 @@
     </div>
   </div>
   <div class="romain-img">
-    <img src="/img/romain-hero.jpg" style="width: 100%"/>
+    <%= image_tag("romain-hero.jpg", style: "width: 100%") %>
+
   </div>
   <div id="carouselIndicators" class="carousel slide full-text p-5" data-ride="carousel" style="background-image: url('img/testimonial_background.jpg'); background-size: cover;">>
     <h2 class="text-orange-ssdp" style="text-align: center; margin-top: 0px; padding-top: 20px;">What Our Students Say</h2>
