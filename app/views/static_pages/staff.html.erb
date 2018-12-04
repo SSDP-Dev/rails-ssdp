@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="row p-1">
+    <div class="col">
+      <h1>Staff</h1>
+      <hr />
+      <span style="font-style:italic">SSDP’s international staff is based in Washington, D.C. with offices in Denver and Oakland and is employed to serve, represent, and support our chapter network.</span>
+    </div>
+  </div>
+  <div class="row pb-3">
+
+    <div class="col-sm-3">
+      <img style="width: 100%" src = "{{.Params.headshot}}" />
+      <div class="staff-name">{{.Params.name}}</div>
+        <div class="staff-title">{{.Params.title}}</div>
+        <div class="staff-social">
+          <a href="{{.Params.facebook}}" target="_blank" rel="noopener"><i class="fab fa-facebook-f text-orange-ssdp"></i></a>
+          <a href="{{.Params.twitter}}" target="_blank" rel="noopener"><i class="fab fa-twitter text-orange-ssdp"></i></a>
+          <a href="mailto:{{.Params.email}}" target="_blank" rel="noopener"><i class="fas fa-envelope text-orange-ssdp"></i></a>
+        </div>
+        <hr />
+        <div style="text-align: center"><a href="{{ .RelPermalink }}">Bio ></a></div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,99 @@
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-auto-flow: dense;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  /* Grid Layout */
+
+  .resources-img-container,
+  .resources-ssdp-materials,
+  .resources-movement-building,
+  .resources-drug-education,
+  .resources-policy-change {
+    grid-column: 1 / -1;
+  }
+
+  @media all and (min-width: 43.75rem) {
+    .resources-ssdp-materials {
+      grid-column: 1 / 4;
+    }
+
+    .resources-ssdp-materials img {
+    }
+
+    .resources-movement-building {
+      grid-column: 4 / 7;
+    }
+
+    .resources-drug-education {
+      grid-column: 7/10;
+    }
+
+    .resources-policy-change {
+      grid-column: 10 / 13;
+    }
+  }
+
+  /* Hero Image */
+
+  .resources-img-container {
+    position: relative;
+  }
+
+  .resources-img-container h1,
+  .resources-img-container span,
+  .resources-img-container hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .resources-img-container h1 {
+    top: 25%;
+  }
+
+  .resources-img-container span {
+    top: 45%;
+    font-style: italic;
+    font-size: 21px;
+  }
+  @media all and (max-width: 378px)
+  {
+    .resources-img-container h1 {
+      top: 0%;
+    }
+  }
+</style>
+
+<div class="grid">
+  <div class="resources-img-container">
+    <img src="/img/resources_img.jpg" width="100%" />
+    <h1 class="text-white">SSDP Resources</h1>
+    <span class="text-white">Get the word out, take action, and let us help with SSDP's resources.</span>
+  </div>
+  <div class="resources-ssdp-materials">
+    <a href="/materials"><img src="/img/materials.jpg" width="100%" /></a>
+    <a href="/materials"><h2 class="p-1">SSDP Materials</h2></a>
+  </div>
+  <div class="resources-movement-building">
+    <a href="/movement"><img src="/img/library.png" width="100%" /></a>
+    <a href="/movement"><h2 class="p-1">Movement Building</h2></a>
+  </div>
+  <div class="resources-drug-education">
+    <a href="/justsayknow"><img src="/img/organizing.png" width="100%" /></a>
+    <a href="/justsayknow"><h2 class="p-1">Just Say Know</h2></a>
+  </div>
+  <div class="resources-policy-change">
+    <a href="/campaigns"><img src="/img/leadership.png" width="100%" /></a>
+    <a href="/campaigns"><h2 class="p-1">Policy Change</h2></a>
+  </div>
+</div>
