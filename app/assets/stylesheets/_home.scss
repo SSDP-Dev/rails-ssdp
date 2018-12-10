@@ -1,0 +1,88 @@
+.home {
+  @extend %grid;
+  &__campus-change,
+  &__dpr-gloal,
+  &__chapters-map,
+  &__find-your-chapter,
+  &__for-students,
+  &__full-text,
+  &__harm-reduction,
+  &__half-text,
+  &__just-say-know,
+  &__get-updates,
+  &__hero,
+  &__romain-img,
+  &__testimonials {
+    grid-column: 1 / -1;
+  }
+  &__hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+
+    width: 100%;
+  }
+  &__dpr-global,
+  &__campus-change,
+  &__harm-reduction,
+  &__just-say-know {
+    padding: 5em;
+  }
+  &__find-your-chapter {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 1 / 5;
+
+    }
+
+  }
+  &__get-updates {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 5 / 9;
+
+    }
+  }
+  &__for-students {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 9 / 13;
+
+    }
+  }
+  &__dpr-global {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 1 / 2;
+
+    }
+  }
+  &__harm-reduction {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 1 / 2;
+
+    }
+  }
+  &__campus-change {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 2 / 3;
+
+    }
+  }
+  &__just-say-know {
+    @media all and (min-width: $md-breakpoint) {
+      grid-column: 2 / 3;
+
+    }
+  }
+  &__half-text {
+    padding: 3em;
+    @media all and (min-width: $md-breakpoint) {
+      // grid-column: 1 / 7;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 20% 40% 40%;
+    }
+@media all and (min-width: $lg-breakpoint) {
+  grid-column: 1 / -1;
+
+}
+  }
+
+}
