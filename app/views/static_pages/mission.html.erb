@@ -1,35 +1,5 @@
-
-<style>
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-  }
-
-  .mission-sidebar {
-    padding: 1em;
-  }
-
-  .hero-img,
-  .mission-text,
-  .mission-sidebar {
-    grid-column: 1 / -1;
-  }
-
-
-  @media all and (min-width: 700px) {
-    .mission-text {
-      grid-column: 2 / 9;
-    }
-
-    .mission-sidebar {
-      grid-column: 9 / 12;
-    }
-  }
-</style>
-<div class="grid">
-  <div class="hero-img">
-    <%= image_tag("mission-hero.jpg", style: "100%") %>
-  </div>
+<div class="mission">
+  <div class="mission__hero" style="background-image: url('<%= image_path("mission-hero.jpg") %>')"></div>
   <div class="mission-text p-3">
     <hr />
     <h1>Mission and Values</h1>

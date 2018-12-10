@@ -1,0 +1,29 @@
+.mission {
+  @extend %grid;
+  &__hero {
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.mission-sidebar {
+  padding: 1em;
+}
+
+.hero-img,
+.mission__hero,
+.mission-text,
+.mission-sidebar {
+  grid-column: 1 / -1;
+}
+
+
+@media all and (min-width: 700px) {
+  .mission-text {
+    grid-column: 2 / 9;
+  }
+
+  .mission-sidebar {
+    grid-column: 9 / 12;
+  }
+}
